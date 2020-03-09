@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">DesafioLoginPage2</string>
+    <string name="nu">Nombre de Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="boton1">Ingresar</string>
+    <string name="boton2">Registrar</string>
+    <string name="url">https://desafiolatam.com/assets/home/logo-academia-bla-790873cdf66b0e681dfbe640ace8a602f5330bec301c409744c358330e823ae3.png</string>
+
+    <string name="reg_usuario">Usuario</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_pass">Contraseña</string>
+    <string name="reg_confirmpass">Confirmar Contraseña</string>
+    <string name="reg_spin">Edad</string>
+    <string name="reg_label_re">Género</string>
+    <string name="reg_m">Masculino</string>
+    <string name="reg_f">Femenino</string>
+    <string name="reg_bt">Registrar</string>
+
+    <string-array name="array_edades">
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+    </string-array>
+
+
+</resources>
