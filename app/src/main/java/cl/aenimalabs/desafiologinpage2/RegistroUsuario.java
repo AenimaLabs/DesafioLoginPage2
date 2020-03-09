@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -30,6 +29,8 @@ public class RegistroUsuario extends AppCompatActivity {
         txt_email= findViewById(R.id.email);
         txt_pass = findViewById(R.id.pass_registro);
         txt_confirmpass= findViewById(R.id.confirm_pass);
+        rb_mas=findViewById(R.id.masc);
+        rb_fem=findViewById(R.id.fem);
 
         final Button bt_registro= findViewById(R.id.registro_reg);
         final Context context = getApplicationContext();
@@ -41,13 +42,15 @@ public class RegistroUsuario extends AppCompatActivity {
                 String passtexto = txt_pass.getText().toString();
                 String email = txt_email.getText().toString();
                 String confirmpass = txt_confirmpass.getText().toString();
-                if (passtexto.equals(confirmpass)){
-                    if (!passtexto.isEmpty() && !usuariotexto.isEmpty() && !email.isEmpty()  && !confirmpass.isEmpty()){
+
+                    if (!passtexto.isEmpty() && !usuariotexto.isEmpty() && !email.isEmpty()  && !confirmpass.isEmpty() && (rb_mas.isChecked() || rb_fem.isChecked())){
+                        if (passtexto.equals(confirmpass)){
                         Intent intent = new Intent(RegistroUsuario.this, HomeActivity.class);
                         startActivity(intent);
-                    }
+                    }else
+                        Toast.makeText(context,"Contraseñas distintas", Toast.LENGTH_SHORT).show();
                 }else
-                    Toast.makeText(context, "Contraseñas distintas", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Rellene los campos", Toast.LENGTH_SHORT).show();
 
             }
         });

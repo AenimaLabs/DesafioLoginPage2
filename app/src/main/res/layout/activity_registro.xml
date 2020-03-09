@@ -79,13 +79,13 @@
         app:layout_constraintTop_toBottomOf="@+id/confirm_pass">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/masc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reg_m" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/fem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reg_f" />
